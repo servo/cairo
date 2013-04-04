@@ -27,7 +27,7 @@ configure: cairo-version.h
 
 doc:
 	cd doc && $(MAKE) $(AM_MAKEFLAGS) $@
-test retest recheck: all
+test retest: all
 	cd test && $(MAKE) $(AM_MAKEFLAGS) $@
 perf: all
 	cd perf && $(MAKE) $(AM_MAKEFLAGS) $@
